@@ -11,4 +11,4 @@ This JS and Express-Node.js app finds a best _furrier_ friend for your best furr
 - [Path npm](https://www.npmjs.com/package/path)
 
 **DEMO**
-_Find a Pal_ is deployed to Heroku. Please [check it out.](https://nodejs.org/en/)
+_Find a Pal_ is deployed to Heroku. Please [check it out.](https://findapal.herokuapp.com/)
