@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="assets/style/style.css"> -->
+    <!-- <link rel="resetsheet" href="assets/style/reset.css"> -->
+
+    <title>Find a Pal Survey</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Furry Friend Survey</h1>
+            <p>Answer these short questions about your Best Furry
+                Friend and we will match them up with a Best FURRIER Friend! If your pal would strongly agree with the
+                statement, choose 5. If your pal your pal would strongly agree with the statement, please choose 5. If
+                they
+                would strongly disagree, choose 1.</p>
+            <br>
+
+            <!-- Survey -->
+            <form>
+
+                <div class="form-group">
+                    <p class="card-text">Name</p>
+                    <input type="text" id="name" class="form-control" required="" placeholder="Your BFF's Name">
+                    <br>
+
+                    <p class="card-text">Here's Lookin' at You Kid!</p>
+                    <input type="url" id="photo" class="form-control" required="" placeholder="Insert Image URL">
+                    <br>
+
+                    <p class="card-text">Tell us about yourself!</p>
+                    <input type="url" id="about" class="form-control" required="" placeholder="Please keep your response under 300 characters">
+                    <br>
+
+                    <p class="card-text">You enjoy long walks in the park.</p>
+                    <select data-placeholder="" class="chosen-select" id="q1">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+
+                    <p class="card-text">You are always excited to play.</p>
+                    <select data-placeholder="" class="chosen-select" id="q2">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+
+                    <p class="card-text">A long nap in the sunshine makes you very happy.</p>
+                    <select data-placeholder="" class="chosen-select" id="q3">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+
+                    <p class="card-text">There is nothing better than curling up at home on the couch after dinner with
+                        your
+                        BFF.</p>
+                    <select data-placeholder="" class="chosen-select" id="q4">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+
+                    <p class="card-text">You love seafood.</p>
+                    <select data-placeholder="" class="chosen-select" id="q5">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+
+                    <p class="card-text">Any food is good food to you.</p>
+                    <select data-placeholder="" class="chosen-select" id="q6">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+
+                    <p class="card-text">You shower everyone with love and affection.</p>
+                    <select data-placeholder="" class="chosen-select" id="q7">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+
+                    <p class="card-text">You are almost always calm, cool, and collected.</p>
+                    <select data-placeholder="" class="chosen-select" id="q8">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+
+                    <p class="card-text">You enjoy exploring new places.</p>
+                    <select data-placeholder="" class="chosen-select" id="q9">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+
+                    <p class="card-text">You are exceptionally loyal.</p>
+                    <select data-placeholder="" class="chosen-select" id="q10">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+
+                <hr>
+                <footer class="footer">
+                    <div class="container">
+                        <p></p><a href="/api/friends">Pals for Your Pal</a><span> | </span>
+                        <a href="https://github.com/">GitHub Repo</a></p>
+                    </div>
+                </footer>
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade bd-example-modal-lg" id="newBFFModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLongTitle">Meet Your new BFF!</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <h2 id="newBFF"></h2>
+                        <p id="newBFFBlurb">
+                        </p> <img id="newBFFPhoto" src="#">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+        // Form validation
+        var valid = true;
+        if ($("#name").val() === "" || $("#photo").val() === "" || $("#about").val() === "") {
+            valid = false;
+        } else if ($("#q1").val() === "" || $("#q2").val() === "" || $("#q3").val() === "" || $("#q4").val() === "" || $("#q5").val() === "" || $("#q6").val() === "" || $("#q7").val() === "" || $("#q8").val() === "" || $("#q9").val() === "" || $("#q10").val() === "") {
+            valid = false;
+        }
+        if (valid === true) {
+            // Create object for new pet data
+            var newUser = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                about: $("#about").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };
+
+            // Ajax call for post to trigger modal
+            $.post("/api/friends", newUser, function (data) {
+                $("#newBFF").text(data.name);
+                $("#newBFFPhoto").attr("src", data.photo);
+                $("#newBFFBlurb").text(data.about);
+                $("#newBFFModal").modal("toggle");
+            });
+        } else {
+            alert("It's seems as though you missed a field...");
+        }
+        // Clear form upon submission or reload
+        $("#name").val("");
+        $("#photo").val("");
+        $("#about").val("");
+        $("#q1").val("");
+        $("#q2").val("");
+        $("#q3").val("");
+        $("#q4").val("");
+        $("#q5").val("");
+        $("#q6").val("");
+        $("#q7").val("");
+        $("#q8").val("");
+        $("#q9").val("");
+        $("#q10").val("");
+    });
+
+</script>
