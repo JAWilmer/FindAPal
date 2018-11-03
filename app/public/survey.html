@@ -17,33 +17,83 @@
 
 <body>
 
+    <style>
+
+        body {
+        background:
+    url("https://images.unsplash.com/photo-1516934024742-b461fba47600?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d38c917838d6435f6f676b2a5875be1&auto=format&fit=crop&w=634&q=80");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .jumbotron {
+        background-color: rgba(1, 49, 53);
+        color: white;
+        padding: 4% 4% 2% 4%;
+    }
+    
+    .container {
+        background-color: rgb(187, 217, 219, 0.5);
+        color: rgba(1, 49, 53);
+        padding: 4% 5% 1% 5%;
+        align-content: center;
+        text-align: center;
+        border-radius: .5%;
+        margin: 3% auto;
+    }
+    
+    .form-group {
+        text-align: left;
+    }
+    
+    .btn {
+        background-color:rgba(1, 49, 53);
+        border:rgba(1, 49, 53);
+        color: white;
+        margin: 3%;
+    }
+    
+    #newBFFModal {
+    text-align: center;
+    align-content: center;
+    }
+    
+    a {
+    color:rgba(1, 49, 53);
+    }
+
+</style>
+
     <div class="container">
         <div class="jumbotron">
-            <h1>Furry Friend Survey</h1>
-            <p>Answer these short questions about your Best Furry
-                Friend and we will match them up with a Best FURRIER Friend! If your pal would strongly agree with the
-                statement, choose 5. If your pal your pal would strongly agree with the statement, please choose 5. If
+            <h1>The Furry Friend Finder</h1>
+            <br>
+            <p>Answer these questions about your Best Furry
+                Friend and we will match them with a Best FURRIER Friend! If your pal would strongly agree with the
+                statement, choose 5. If
                 they
                 would strongly disagree, choose 1.</p>
             <br>
+        </div>
 
-            <!-- Survey -->
-            <form>
+        <!-- Survey -->
+        <form>
 
-                <div class="form-group">
-                    <p class="card-text">Name</p>
-                    <input type="text" id="name" class="form-control" required="" placeholder="Your BFF's Name">
-                    <br>
+            <div class="form-group">
+                <h5>Name</h5>
+                <input type="text" id="name" class="form-control" required="" placeholder="Your BFF's Name">
+                <br>
 
-                    <p class="card-text">Here's Lookin' at You Kid!</p>
-                    <input type="url" id="photo" class="form-control" required="" placeholder="Insert Image URL">
-                    <br>
+                <h5>Here's Lookin' at You Kid!</h5>
+                <input type="url" id="photo" class="form-control" required="" placeholder="Insert Image URL">
+                <br>
 
-                    <p class="card-text">Tell us about yourself!</p>
-                    <input type="url" id="about" class="form-control" required="" placeholder="Please keep your response under 300 characters">
-                    <br>
+                <h5>Tell us about yourself!</h5>
+                <input type="url" id="about" class="form-control" required="" placeholder="Please keep your response under 300 characters">
+                <br>
 
-                    <p class="card-text">You enjoy long walks in the park.</p>
+                <div>
+                    <h5>You enjoy long walks in the park.</h5>
                     <select data-placeholder="" class="chosen-select" id="q1">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -52,9 +102,10 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <br>
+                </div><br>
 
-                    <p class="card-text">You are always excited to play.</p>
+                <div>
+                    <h5>You are always excited to play.</h5>
                     <select data-placeholder="" class="chosen-select" id="q2">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -63,9 +114,10 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <br>
+                </div><br>
 
-                    <p class="card-text">A long nap in the sunshine makes you very happy.</p>
+                <div>
+                    <h5>A long nap in the sunshine makes you very happy.</h5>
                     <select data-placeholder="" class="chosen-select" id="q3">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -74,11 +126,13 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <br>
+                </div><br>
 
-                    <p class="card-text">There is nothing better than curling up at home on the couch after dinner with
+                <div>
+                    <h5>There is nothing better than curling up at home on the couch after dinner
+                        with
                         your
-                        BFF.</p>
+                        BFF.</h5>
                     <select data-placeholder="" class="chosen-select" id="q4">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -87,9 +141,10 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <br>
+                </div><br>
 
-                    <p class="card-text">You love seafood.</p>
+                <div>
+                    <h5>You love seafood.</h5>
                     <select data-placeholder="" class="chosen-select" id="q5">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -98,9 +153,10 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <br>
+                </div><br>
 
-                    <p class="card-text">Any food is good food to you.</p>
+                <div>
+                    <h5>Any food is good food to you.</h5>
                     <select data-placeholder="" class="chosen-select" id="q6">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -109,9 +165,10 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <br>
+                </div><br>
 
-                    <p class="card-text">You shower everyone with love and affection.</p>
+                <div>
+                    <h5>You shower everyone with love and affection.</h5>
                     <select data-placeholder="" class="chosen-select" id="q7">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -120,9 +177,10 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <br>
+                </div><br>
 
-                    <p class="card-text">You are almost always calm, cool, and collected.</p>
+                <div>
+                    <h5>You are almost always calm, cool, and collected.</h5>
                     <select data-placeholder="" class="chosen-select" id="q8">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -131,9 +189,10 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <br>
+                </div><br>
 
-                    <p class="card-text">You enjoy exploring new places.</p>
+                <div>
+                    <h5>You enjoy exploring new places.</h5>
                     <select data-placeholder="" class="chosen-select" id="q9">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -142,9 +201,10 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <br>
+                </div><br>
 
-                    <p class="card-text">You are exceptionally loyal.</p>
+                <div>
+                    <h5>You are exceptionally loyal.</h5>
                     <select data-placeholder="" class="chosen-select" id="q10">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -153,51 +213,48 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
-                    <br>
+                </div><br>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-lg" id="submit">Submit</button>
+
+            <hr>
+            <footer class="footer">
+                <p><a href="/api/friends" target="_blank">Pals for Your Pal</a><span> | </span>
+                    <a href="https://github.com/" target="_blank">GitHub Repo</a></p>
+            </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade bd-modal-lg" id="newBFFModal" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-center" id="ModalLongTitle">Meet Your new BFF!</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body">
 
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-
-                <hr>
-                <footer class="footer">
-                    <div class="container">
-                        <p></p><a href="/api/friends">Pals for Your Pal</a><span> | </span>
-                        <a href="https://github.com/">GitHub Repo</a></p>
-                    </div>
-                </footer>
-
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade bd-example-modal-lg" id="newBFFModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="exampleModalLongTitle">Meet Your new BFF!</h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-
-                        <h2 id="newBFF"></h2>
-                        <p id="newBFFBlurb">
-                        </p> <img id="newBFFPhoto" src="#">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    </div>
+                    <h2 id="newBFF"></h2>
+                    <p id="newBFFBlurb">
+                    </p> <img id="newBFFPhoto" src="#">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 
 </html>
